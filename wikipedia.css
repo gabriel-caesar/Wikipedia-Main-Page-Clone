@@ -1,0 +1,692 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: "Linux Lubertine";
+  src: url('/fonts/linux-lubertine/LinLibertine_aDRS.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url('/fonts/sf-pro/SF-Pro-Display-Regular.otf'), format('opentype');
+}
+
+@font-face {
+  font-family: "SF Pro Light";
+  src: url('/fonts/sf-pro/SF-Pro-Display-Light.otf'), format('opentype');
+}
+
+.featured-header {
+  margin: auto;
+  position: relative;
+  top: -190px;
+  width: 500px;
+}
+
+.logo-and-header {
+  margin: auto;
+  width: 50vh;
+  height: 300px;
+  margin: 2rem auto .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-and-header h1 {
+  font-size: 28px;
+  font-family: Linux Lubertine, sans-serif;
+  font-weight: 700;
+}
+
+h1 .caps-letter {
+  font-size: 1.5em;
+  font-weight: 300;
+  position: relative;
+  top: 1px;
+}
+
+.logo-and-header h2 {
+  font-size: 16px;
+  font-family: Linux Lubertine, sans-serif;
+  font-weight: 300;
+}
+
+.globe-logo {
+  position: relative;
+  top: 78px;
+
+}
+
+/*######################################language squares################################################*/
+
+#language-container {
+  width: 156px;
+  height: 45px;
+  text-align: center;
+  font-family: SF Pro, sans-serif;
+  padding-top: 2px;
+  margin: auto; 
+  position: relative;
+}
+
+#language-container:hover {
+  background-color: rgb(234, 236, 240);
+}
+
+#language-container a:hover {
+  text-decoration: underline;
+}
+
+#language-container a {
+  text-decoration: none;
+  color: #3366CC;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.06rem;
+}
+
+#language-container p:hover,
+#language-container:hover {
+  cursor: pointer;
+}
+
+#language-container p {
+  color: #54595D;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+
+.lang-sq-1 {  /*English*/
+  right: 26.5%;
+  top: 0%;
+}
+
+.lang-sq-2 {  /*Русский*/
+  left: 26.5%;
+  bottom: 44px;
+  top: 0%;
+}
+
+.lang-sq-3 {  /*Deutsch*/
+  right: 35.3%;
+  bottom: 30px; 
+  top: 0%;
+}
+
+.lang-sq-4 {  /*中文*/
+  left: 35.3%;
+  bottom: 70px;
+  top: 0%;
+}
+
+
+.lang-sq-5 {  /*فارسی*/
+  right: 38.2%;
+  bottom: 50px;
+}
+
+.lang-sq-6 {  /*日本語*/
+  left: 38.2%;
+  bottom: 90px;
+}
+
+.lang-sq-7 {  /*Espanol*/
+  right: 35.3%;
+  bottom: 70px; 
+}
+
+.lang-sq-8 {  /*Francais*/
+  left: 35.3%;
+  bottom: 110px;
+}
+
+.lang-sq-9 {  /*Italiano*/
+  right: 26.5%;
+  bottom: 100px;
+}
+
+.lang-sq-10 {  /*Portugues*/
+  left: 26.5%;
+  bottom: 143px;
+}
+
+/*######################################search bar######################################################*/
+
+fieldset {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  bottom: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+fieldset input {
+  padding: 13px 12px;
+  padding-right: 25px;
+  width: 395px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-left: 1px solid #9ea1a4;
+  border-right: none;
+  border-top: 1px solid #9ea1a4;
+  border-bottom: 1px solid #9ea1a4;
+  font-family: SF Pro, sans-serif;
+  font-weight: 400;
+  transition: box-shadow 0.2s ease;
+}
+
+fieldset input:focus {
+  box-shadow: inset 0 0 1px 1px #3366CC;
+  outline: none;
+  border: none;
+  font-family: SF Pro, sans-serif;
+  font-weight: 400;
+  border-left: 1.5px solid #9ea1a4;
+  border-right: none;
+  border-top: 1.5px solid #9ea1a4;
+  border-bottom: 1.5px solid #9ea1a4;
+}
+
+/*###################################dropdown##########################################################*/
+
+fieldset select {
+  position: absolute;
+  width: 48px;
+  padding-block: 2px;
+  padding-inline: 5px;
+  right: 40%;
+  border: none;
+  font-size: 12px;
+  color: #737577;
+  transition: background-color 0.2s ease;
+}
+
+
+fieldset select:focus {
+  outline: none;
+  border: 1px solid #3366CC;
+  padding-block: 4px;
+  padding-inline: 4px;
+}
+
+fieldset select:hover {
+  background-color: rgb(248, 248, 248);
+  cursor: pointer;
+}
+
+/*.drop-down {
+  font-family: SF Pro Light, sans-serif;
+  position: absolute;
+  right: 40%;
+  font-size: 13px;
+  color: #54595D;
+}
+
+z
+
+.drop-down i {
+  margin-left: 4px;
+  float: right;
+  transform: scale(.7);
+}*/
+
+fieldset button {
+  color:white;
+  font-size: 18px;
+  background-color:#3366CC;
+  padding: 11.5px 20px;
+  border: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  transition: background-color 0.15s ease;
+}
+
+fieldset button:hover {
+  background-color: #5789ed;
+  cursor: pointer;
+}
+
+/*######################################read wikipedia button###########################################*/
+
+
+.readwiki-container {
+  margin: auto;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 280px;
+}
+
+.readwiki-container #line-through-wrapper {
+  background-color: #fff;
+  width: 100%;
+  height: 33px;
+  max-width: 335px;
+  z-index: 2;
+  position: absolute;
+  margin: auto;
+  transition: max-width .2s ease-in .1s;
+}
+
+#line-through {
+  position: relative;
+  bottom: 297px;
+  background-color: #c5c7c9;
+  width: 100%;
+  height: 1px;
+  max-width: 460px;
+  z-index: -1;
+  margin: auto;
+  transition: max-width .2s ease-in .1s;
+}
+
+.readwiki-container button {
+  vertical-align: middle;
+  color:#3366CC;
+  font-family: SF Pro, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.06rem;
+  background-color: #F8F9FA;
+  border: 1px solid #9ea1a4;
+  border-radius: 2px;
+  padding-inline: 12px;
+  padding-block: 6px;
+  z-index: 2;
+}
+
+.readwiki-container button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.readwiki-container button > span {
+  vertical-align: middle;
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+.readwiki-container button > i {
+  vertical-align: middle;
+  font-size: 14px;
+  margin-left: 6px;
+  transition: transform .3s ease;
+}
+
+.readwiki-container button:focus-within {
+  border: 2px solid #3366CC;
+  padding-block: 5px;
+  box-shadow: inset 0 0 1px .2px #3366CC;
+}
+
+
+  
+
+
+
+
+/*#############################OPENED BUTTON CONTAINER##################################################*/
+
+.opened-btn-container {
+  display: flex;
+  position: relative;
+  bottom: 296px;
+  z-index: 1;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  width: 79%;
+  margin: auto;
+  margin-bottom: 100px;
+  max-height: 0;
+  transition: max-height .2s ease-in .5s;
+  overflow: hidden;
+}
+
+
+.expand {
+  max-height: 1400px;
+}
+
+
+.fake-hr {
+  background-color: #c5c7c9;
+  height: 1px;
+  width: 96%;
+  margin: auto;
+  position: relative;
+  bottom: 6.5px;
+  z-index: -1;
+}
+
+.fake-hr:nth-of-type(4) {
+  bottom: 6px;   /*fixed the width problem, change to 6.5px so you can see*/
+}
+
+.title-heads {
+  margin: auto;
+  padding-inline: 8px;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: SF Pro Light, sans-serif;
+  letter-spacing: 0.06rem;
+  background-color: #f8f9fa;
+}
+
+.title-heads:first-child {
+  margin-top: 30px;
+}
+
+.opened-btn-container ul {
+  margin: auto;
+  height: auto; 
+  width: 96%;
+  column-width: 11.5rem;
+  columns: 7;
+  padding-block: 15px;
+  padding-right: 260px;
+}
+
+.opened-btn-container ul:nth-of-type(2),
+.opened-btn-container ul:nth-of-type(3),
+.opened-btn-container ul:nth-of-type(4) {
+  padding-right: 0px;
+  columns: 9;
+  column-width: 7rem;
+}
+
+
+.opened-btn-container li {
+  list-style: none;
+  margin-bottom: 6px;
+  font-weight: 300;
+  font-family: SF Pro Light, sans-serif;
+  font-size: 15px;
+}
+
+.opened-btn-container a {
+  text-decoration: none;
+  color: #36c;
+}
+
+.opened-btn-container a:hover {
+  text-decoration: underline;
+}
+
+.otherLanguages-anchor {
+  font-family: SF Pro, sans-serif;
+  margin: auto;
+  font-size: 14px;
+  letter-spacing: 0.06rem;
+  margin-bottom: 20px;
+}
+
+/*###############################FOOTER#######################################################*/
+
+.divider {
+  position: relative;
+  background-color: #c5c7c9;
+  width: 98.5%;
+  bottom: 350px;
+  height: 1px;
+  margin: auto;
+}
+
+
+footer {
+  display: flex;
+  padding-inline: 30px;
+  padding-top: 40px;
+  position: relative;
+  bottom: 343px;
+  width: 100%;
+  height: 500px;
+}
+
+footer .icons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: auto;
+  gap: 16px;
+  margin-left: 85px;
+}
+
+footer .icons-container a:hover {
+  background-color: rgb(234, 236, 240);
+}
+
+footer .wrapping-two-divs {
+  width: 29%;
+  padding-left: 80px;
+}
+
+footer .wiki-info {
+  font-family: SF Pro, sans-serif;
+}
+
+footer .mobile-app {
+  font-family: SF Pro, sans-serif;
+}
+
+.icon { 
+  display: flex;
+  align-items: center;
+  padding: 13px 15px 20px 18px;
+  width: 100%;
+  margin-bottom: 0;
+  text-decoration: none;
+  outline: #3366CC;
+}
+
+footer .icon span > h3 {
+  color: #5789ed;
+  font-family: SF Pro Light, sans-serif;
+  letter-spacing: 0.05rem;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+footer .icon span > p {
+  color: #54595D;
+  font-family: SF Pro Light, sans-serif;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+/*###################ICON INSERTS#######################################################################################*/
+
+.icon img {
+  margin-right: 10px;
+}
+
+.one img {
+  width: 35px; /*Commons*/
+  height: 48px;
+}
+
+.two img {
+  width: 35px; /*WikiVoyage*/
+  height: 40px;
+}
+
+.three img { /*Wiktionary*/
+  width: 40px;
+  height: 40px;
+}
+
+.four img { /*Wikibooks*/
+  width: 40px;
+  height: 40px;
+
+}
+
+.five img { /*Wikinews*/
+  width: 48px;
+  height: 28px;
+}
+
+.six img {  /*WikiData*/
+  width: 50px;
+  height: 30px;
+}
+
+.seven img {
+  width: 45px;  /*Wikiversity*/
+  height: 37px;
+}
+
+.eight img { /*Wikiquote*/
+  width: 35px;
+  height: 40px;
+}
+
+.nine img { /*Meta-wiki*/
+  width: 40px;
+  height: 40px;
+}
+
+.ten img { /*Wikisource*/
+  width: 40px;
+  height: 40px;
+}
+
+.eleven img { /*Wikispecies*/
+  width: 38px;
+  height: 45px;
+}
+
+.twelve img { /*Mediawiki*/
+  width: 40px;
+  height: 40px;
+}
+
+.thirteen img { /*Wikifunctions*/
+  width: 40px;
+  height: 40px;
+}
+
+/*############################WIKI-INFO-ONE#######################################################*/
+
+.wiki-info {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.wiki-info p {
+  font-family: SF Pro Light, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.05rem;
+  color: #54595D;
+  line-height: 1.2rem;
+}
+
+.wiki-info a {
+  font-family: SF Pro Light, sans-serif;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+  color: #3366CC;
+  font-size: 13px;
+}
+
+.wiki-info a:hover {
+  text-decoration: underline;
+}
+
+.wiki-info img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/*############################WIKI-INFO-TWO#######################################################*/
+
+.wiki-info-two {
+  display: flex;
+  background-color: #f8f9fa;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+.wiki-info-two .google-play-button {
+  width: 124px;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.wiki-info-two .apple-button {
+  width: 110px;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.wiki-info-two h3 {
+  font-family: SF Pro, sans-serif;
+  font-size: 13px;
+  margin-bottom: 16px;
+  letter-spacing: 0.05rem;
+}
+
+.wiki-info-two  #download {
+  color: #3366CC;
+  text-decoration: none;
+}
+
+.wiki-info-two #download:hover {
+  text-decoration: underline;
+}
+
+.wiki-info-two p {
+  font-family: SF Pro Light, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.05rem;
+  color: #54595D;
+  line-height: 1.2rem;
+}
+
+.wiki-info-two .w-logo {
+  width: 38px;
+  height: 38px;
+  margin-right: 10px;
+  box-shadow: 0 0 2px .5px rgba(0, 0, 0, 0.105);
+  border-radius: 4px;
+}
+
+
+/*###############BOTTOM-PAGE###########################################################################*/
+
+.bottom-page {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  border-top: 1px solid #c5c7c9;
+  width: 98.5%;
+  height: 1px;
+  padding-block: 15px;
+  bottom: 330px;
+}
+
+.bottom-page p {
+  font-family: SF Pro Light, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.05rem;
+  color: #54595D;
+}
+
+.bottom-page a {
+  text-decoration: none;
+  color:#3366CC;
+}
+
+.bottom-page a:hover {
+  text-decoration: underline;
+}
